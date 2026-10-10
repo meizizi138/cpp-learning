@@ -1,0 +1,41 @@
+# .gitignore —— 告诉 Git 哪些文件不用管
+#
+# 原则：只提交"你自己写的"和"别人拿到能重建出同样结果"的文件。
+# 编译产物、IDE 缓存都可以由源代码重新生成，提交它们会让仓库变成几百 MB 的垃圾堆。
+
+# ===== Visual Studio 生成物 =====
+x64/
+Debug/
+Release/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.tlog
+*.log
+*.lastbuildstate
+*.recipe
+
+# ===== Visual Studio 缓存（体积最大，绝对不要提交）=====
+.vs/
+
+# ===== 编译中间目录 =====
+build/
+out/
+[Bb]in/
+[Oo]bj/
+
+# ===== 系统文件 =====
+Thumbs.db
+desktop.ini
+*.swp
+
+# ===== 要提交的东西（不要写进这里）=====
+#   *.cpp  *.h        —— 你的源代码
+#   *.vcxproj         —— 项目的编译配置（别人靠它重建项目）
+#   *.vcxproj.filters —— VS 里的文件分组
+#   *.slnx / *.sln    —— 解决方案文件
+#   README.md         —— 项目说明
