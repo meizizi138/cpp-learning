@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="minitool.cpp">
+    <ClCompile Include="w05_p2.cpp">
       <Filter>w02</Filter>
     </ClCompile>
   </ItemGroup>
